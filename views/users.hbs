@@ -1,0 +1,10 @@
+<h1>All users</h1>
+{{#each users}}
+ <div>
+   <a href="posts/?name={{this.name}}&q=true">{{this.name}}</a>
+ </div>
+{{/each}}
+
+<div>
+  <a href="posts/all">========To all=======</a>
+</div>
