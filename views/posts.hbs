@@ -1,10 +1,22 @@
 <h1>POSTS</h1>
-{{#each Posts}}
+<center>
+  <form id="createPost">
+    <input type="text" name="title" placeholder="title">
+    <input type="text" name="body" placeholder="your post">
+    <button type="submit">submit</button>
+  </form>
+<div class="red" id="errorMessage"></div>
+</center>
+
+
 <div class="wrapper">
+{{#each Posts}}
   <div class="item">
     <h1>{{this.title}}</h1>
     <p>{{this.body}}</p>
     <i>{{../name}}</i>
   </div>
-</div>
 {{/each}}
+</div>
+
+<script src="/createPost.js" defer></script>

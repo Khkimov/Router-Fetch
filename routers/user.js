@@ -1,5 +1,5 @@
 const express = require('express');
-const { User } = require('../db/models');
+const { User, Post } = require('../db/models');
 const router = express.Router();
 
 
@@ -13,5 +13,4 @@ router.get('/', async (req, res) => {
     res.status(500).end();
   }
 })
-
 module.exports = router;

@@ -2,10 +2,15 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  margin: 10px 5px;
+  flex-wrap: wrap;
 }
 
 .item {
   width: 300px;
   background-color: yellow;
+  margin: 20px;
+}
+
+.red {
+  color: red;
 }
